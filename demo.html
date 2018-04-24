@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>1.简单的菜单特效</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.pa{
+		display:flex;
+		justify-content:center;
+        margin-top:100px;
+	}
+	.box0,.box1,.box2,.box3,.box4,.box5{
+		background-color:#c0cfc9;
+		margin:0 30px;
+		height:80px;
+		width:80px;
+		text-align:center;
+		line-height:80px;
+		border: 2px solid black;
+	}
+	.box1{
+		transform:skew(30deg,0);
+	}
+	.box2{
+		transform:scale(0.5,1);
+	}
+	.box3{
+		transform:rotate(45deg);
+	}
+	.box4{
+		transform:translate(10px,20px);
+	}
+  </style>
+ </head>
+ <body>
+  <div class="pa">
+	<div class="box0">box0</div>
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+	<div class="box4">box4</div>
+	<div class="box5">box5</div>
+  </div>
+ </body>
+</html>
