@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style type="text/css">
+	/*--------------------------基础设置---------------------------------------------------*/
+	*{
+		margin:0;
+		padding:0;
+	}
+	.task{
+		display:flex;
+		justify-content:center;
+        margin-top:100px;
+	}
+	/*--------------------------------箱体基本设置------------------------------------------*/
+	.box0,.box1,.box2,.box3,.box4,.box5{
+		background-color:#ebebeb;
+		margin:0 30px;
+		height:80px;
+		width:80px;
+		text-align:center;
+		line-height:80px;
+		border: 2px solid black;
+	}
+	/*--------------------------------X轴倾斜30度------------------------------------------*/
+	.box1{
+		transform:skew(30deg,0);
+	}
+	/*--------------------------------X轴缩小1/2------------------------------------------*/
+	.box2{
+		transform:scale(0.5,1);
+	}
+	/*--------------------------------水平旋转45度------------------------------------------*/
+	.box3{
+		transform:rotate(45deg);
+	}
+	/*--------------------------------X轴位移10像素,Y轴位移20像素------------------------------------------*/
+	.box4{
+		transform:translate(10px,20px);
+	}
+	/*--------------------------------所有变换全部包含------------------------------------------*/
+	.box5{
+		transform:skew(30deg,0) scale(0.5,1) rotate(45deg) translate(10px,20px);
+	}
+  </style>
+ </head>
+ <body>
+  <div class="task">
+	<div class="box0">box0</div>
+	<div class="box1">box1</div>
+	<div class="box2">box2</div>
+	<div class="box3">box3</div>
+	<div class="box4">box4</div>
+	<div class="box5">box5</div>
+  </div>
+ </body>
+</html>
